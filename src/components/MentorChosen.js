@@ -25,7 +25,7 @@ class MentorChosen extends Component {
               <div>
                 <h5 className="d-inline">
                 Tisha Pennington
-                </h5>avo
+                </h5>
               </div>
             </div>
           </div>
