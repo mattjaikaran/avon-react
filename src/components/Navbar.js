@@ -9,7 +9,7 @@ const Navbar = () => {
           <div className="col-xs-12 px-0">
             <header className="global-header" role="banner">
               <div className="text-right mt-3 mr-4 pr-1">
-                <Link className="small small-link-utility ml-auto" to="/">
+                <Link className="small small-link-utility ml-auto" to="/campaign-insider">
                   <strong>Ver en Español</strong>
                 </Link>
               </div>
