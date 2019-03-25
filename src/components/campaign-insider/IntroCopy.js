@@ -4,16 +4,17 @@ class IntroCopy extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      copy: '',
-      editorState: null
+      copy: ''
     }
   }
 
   render() {
     return (
       <div className="m-top-s1">
-        <h1 className="title">CAMPAIGN INSIDER</h1>
-        <h1 className="title-secondary">{this.props.currentCampaign}</h1>
+        <h1 className="title text-center">CAMPAIGN INSIDER</h1>
+        <h1 className="title-secondary text-center">
+          {this.props.currentCampaign}
+        </h1>
         <div className="m-top-s3">
           <hr className="my-5" />
           <p className="lp blurb">
