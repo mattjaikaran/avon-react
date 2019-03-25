@@ -15,7 +15,7 @@ class PaymentMethod extends Component {
               <label className="control-label d-block">
                 <input type="radio" name="radioGroup" id="radio1" value="option1" />
                 <span className="mr-4" />
-                <img src="./images/fpo/cc-icon.png" className="pr-3" alt="cc" /> Credit Card or Debit Card
+                <img src={require('../../../images/cc-icon.png')} className="pr-3" alt="cc" /> Credit Card or Debit Card
               </label>
             </div>
             <div className="ccDetails pl-0 pl-sm-5 pr-2 ml-0 ml-sm-3">
@@ -792,7 +792,7 @@ class PaymentMethod extends Component {
               <label className="control-label mt-2">
                 <input type="radio" name="radioGroup" id="radio2" value="option2" />
                 <span className="mr-4" />
-                <img src="./images/fpo/paypal-icon.png" className="pr-3" /> PayPal
+                <img src={require('../../../images/paypal-icon.png')} className="pr-3" /> PayPal
               </label>
             </div>
           </div>
