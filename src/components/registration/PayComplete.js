@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import CartDetails from './pay-complete/CartDetails'
 import Legal from './pay-complete/Legal'
 import OrderOverview from './pay-complete/OrderOverview'
