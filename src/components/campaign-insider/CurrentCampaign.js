@@ -28,11 +28,8 @@ class CurrentCampaign extends Component {
       <Fragment>
         <CampaignTitle
           campaignTitle="Love Campaign 8"
+          campaignDescription="Order your faves and your customers’ picks — Campaign 8 ends 5 p.m. ET Tuesday, April 2."
         />
-
-        <p>
-          Order your faves and your customers’ picks — Campaign 8 ends 5 p.m. ET Tuesday, April 2.
-        </p>
         <p>
           See all campaign dates on the <a href="https://www.youravon.com/home/campaign-insider/campaign-selling-calendar">campaign selling calendar</a>.
         </p>

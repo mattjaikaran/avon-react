@@ -102,8 +102,14 @@ td, th { padding: 0; }
   .table td, .table th { background-color: #fff !important; }
   .table-bordered th, .table-bordered td { border: 1px solid #ddd !important; } }
 
-/* Lush Icons v1.100 www.lushtype.com Copyright © 2013 Belancio Inc. */
-@font-face { font-family: 'lt2'; src: url("../fonts/lt2/lt2.eot?bw6st1"); src: url("../fonts/lt2/lt2.eot?bw6st1#iefix") format("embedded-opentype"), url("../fonts/lt2/lt2.woff2?bw6st1") format("woff2"), url("../fonts/lt2/lt2.ttf?bw6st1") format("truetype"), url("../fonts/lt2/lt2.woff?bw6st1") format("woff"), url("../fonts/lt2/lt2.svg?bw6st1#lt2") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face {
+  font-family: 'lt2';
+  src: url("./fonts/lt2.eot");
+  src: url("./fonts/lt2.eot") format("embedded-opentype"), url("../fonts/lt2.woff2") format("woff2"), url("./fonts/lt2.ttf") format("truetype"), url("./fonts/lt2.woff") format("woff"), url("./fonts/lt2.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
 html:hover [class^="lt-"], html:hover .demo-datepicker-from-angular .glyphicon-chevron-left:before, .demo-datepicker-from-angular html:hover .glyphicon-chevron-left:before, html:hover .demo-datepicker-from-angular .glyphicon-chevron-right:before, .demo-datepicker-from-angular html:hover .glyphicon-chevron-right:before, html:hover .ng-override-sortable-table table th.sortable span:after, .ng-override-sortable-table table th.sortable html:hover span:after { -ms-zoom: 1; }
 
@@ -5333,3 +5339,8 @@ body {
 .m-top-s2 { margin-top: 30px; }
 .m-top-s3 { margin-top: 50px; }
 .m-top-s4 { margin-top: 80px; }
+
+.select-block {
+    border: 1px solid #ccc;
+    height: 48px;
+}

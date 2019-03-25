@@ -7,11 +7,6 @@ import NextCampaign from './NextCampaign'
 import FollowingCampaign from './FollowingCampaign'
 
 class CampaignInsider extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
   render() {
     return (
       <div>

@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route , Switch } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/Navbar'
-import Login from './components/Login'
-import StarterKit from './components/StarterKit'
-import PayComplete from './components/PayComplete'
+import Login from './components/registration/Login'
+import StarterKit from './components/registration/StarterKit'
+import PayComplete from './components/registration/PayComplete'
 import CampaignInsider from './components/campaign-insider/CampaignInsider'
 // import Footer from './components/Footer'
 
