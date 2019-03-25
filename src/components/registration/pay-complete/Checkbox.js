@@ -7,13 +7,13 @@ const Checkbox = (props) => {
       <div className="checkbox wrap-label">
         <label className="text-muted">
           <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" />
-          <span className="">
+          <span className="mr-4">
             <i className="lt-icon lt-checkbox-checkmark lt-small" />
             <i className="indeterminate lt-icon lt-checkbox-minus" />
           </span>
           <small>
             By clicking this box, I affirm that I have read and agree to the
-            <a href="#" className="link-underline" data-toggle="modal" data-target="#electronic-consent">Consent to Proceed Electronically
+             <a href="#" className="link-underline" data-toggle="modal" data-target="#electronic-consent"> Consent to Proceed Electronically
             </a>.
           </small>
         </label>
@@ -21,13 +21,13 @@ const Checkbox = (props) => {
       <div className="checkbox wrap-label mt-3">
         <label className="text-muted">
           <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" />
-          <span className="">
+          <span className="mr-4">
             <i className="lt-icon lt-checkbox-checkmark lt-small" />
             <i className="indeterminate lt-icon lt-checkbox-minus" />
           </span>
           <small>
             By clicking this box, I agree that I have read, understand, and accept the
-            <a href="#" className="link-underline" data-toggle="modal" data-target="#terms-conditions">Independent Sales Representative Contract Terms and Conditions
+            <a href="#" className="link-underline" data-toggle="modal" data-target="#terms-conditions"> Independent Sales Representative Contract Terms and Conditions
             </a>, including the
             dispute resolution provisions contained therein.
           </small>

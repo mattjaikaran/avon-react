@@ -769,7 +769,7 @@ class PaymentMethod extends Component {
                 <div className="checkbox wrap-label">
                   <label className="">
                     <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" />
-                    <span className="">
+                    <span className="mr-4">
                       <i className="lt-icon lt-checkbox-checkmark lt-small">
                       </i>
                       <i className="indeterminate lt-icon lt-checkbox-minus">
