@@ -6,7 +6,7 @@ const LegalModal = (props) => {
     <div className="form-group has-feedback">
       <Link href={props.link} className="no-underline" data-toggle="modal" data-target="#terms-conditions">
         <div className="select-block bg-white pt-3 pl-4">
-          <p className="line-height">
+          <p>
             <span className="link-plain">
               <small>
                 <strong>{props.title}</strong>

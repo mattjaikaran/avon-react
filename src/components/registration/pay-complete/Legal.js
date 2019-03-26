@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 import LegalModal from './LegalModal'
 import Checkbox from './Checkbox'

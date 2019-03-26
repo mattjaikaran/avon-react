@@ -1,6 +1,15 @@
 import React, { Component } from 'react'
 
 class ShippingAddressDone extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      address: '',
+      city: '',
+      state: '',
+      zip: ''
+    }
+  }
   render() {
     return (
       <div class="mt-0 shipAddressDone">

@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import CartDetails from './pay-complete/CartDetails'
-import Legal from './pay-complete/Legal'
-import OrderOverview from './pay-complete/OrderOverview'
-import PaymentMethod from './pay-complete/PaymentMethod'
-import ShipTo from './pay-complete/ShipTo'
-import ShippingMethod from './pay-complete/ShippingMethod'
-import SocialSecurityNumber from './pay-complete/SocialSecurityNumber'
-import MentorChosen from './MentorChosen'
-import StepsNav from '../StepsNav'
+import CartDetails from './CartDetails'
+import Legal from './Legal'
+import OrderOverview from './OrderOverview'
+import PaymentMethod from './PaymentMethod'
+import ShipTo from './ShipTo'
+import ShippingMethod from './ShippingMethod'
+import SocialSecurityNumber from './SocialSecurityNumber'
+import MentorChosen from '../MentorChosen'
+import StepsNav from '../../StepsNav'
 
 class PayComplete extends Component {
   render() {
@@ -16,9 +16,7 @@ class PayComplete extends Component {
         <MentorChosen />
         <StepsNav />
         <div className="mt-5">
-          <h2>
-            Pay and Complete
-          </h2>
+          <h2>Pay and Complete</h2>
           <p className="text-muted">
             Review shipping details and set up your payment, then click "Submit" to finalize your Registration as the newest Avon Representative!
           </p>

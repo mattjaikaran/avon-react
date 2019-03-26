@@ -5,7 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Login from './components/registration/Login'
 import StarterKit from './components/registration/StarterKit'
-import PayComplete from './components/registration/PayComplete'
+import PayComplete from './components/registration/pay-complete/PayComplete'
 import CampaignInsider from './components/campaign-insider/CampaignInsider'
 // import Footer from './components/Footer'
 
