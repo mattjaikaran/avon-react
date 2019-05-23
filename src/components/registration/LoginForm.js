@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { FacebookButton } from './FacebookButton'
+import { GoogleButton } from './GoogleButton'
 
 class LoginForm extends Component {
   constructor(props) {
@@ -35,7 +37,7 @@ class LoginForm extends Component {
       <form onSubmit={this.onSubmit}>
         <div className="row">
           <div className="col-md-6 form-group">
-            <label>First Name</label>
+            <label>First Name*</label>
             <input
               className="form-control"
               name="firstName"
@@ -45,7 +47,7 @@ class LoginForm extends Component {
               />
           </div>
           <div className="col-md-6 form-group">
-            <label>Last Name</label>
+            <label>Last Name*</label>
             <input
               className="form-control"
               name="lastName"
@@ -56,7 +58,7 @@ class LoginForm extends Component {
           </div>
         </div>
         <div className="form-group">
-          <label>Email Address</label>
+          <label>Email Address*</label>
           <input
             className="form-control"
             name="email"
@@ -75,12 +77,13 @@ class LoginForm extends Component {
             value={this.state.password}
             />
         </div>
-        <button className="btn btn-primary btn-block">Register</button>
+        <Link to="/basic-info">
+          <button className="btn btn-primary btn-block">Register</button>
+        </Link>
         <div className="text-center my-3">or</div>
         <div>
-          <button className="btn btn-default btn-block">Facebook</button>
-          <br/>
-          <button className="btn btn-discourage btn-block">Google</button>
+          <FacebookButton />
+          <GoogleButton />
           <hr/>
         </div>
         <div className="text-center">

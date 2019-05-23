@@ -26,7 +26,7 @@ class ShipTo extends Component {
             </h6>
           </div>
           <div className="col-xs-6 mt-2 text-right">
-            <a href="#" className="link-underline editBtn" onClick={this.onEditClick}>
+            <a href="!#" className="link-underline editBtn" onClick={this.onEditClick}>
               Edit
             </a>
           </div>

@@ -101,7 +101,7 @@ class CreditCardDetails extends Component {
                     <span className="caret" />
                   </span>
                 </button>
-                <div className="dropdown-menu open" role="combobox" style={{maxHeight: 157 + 'px', overflow: 'hidden' }}>
+                <div className="dropdown-menu open" style={{maxHeight: 157 + 'px', overflow: 'hidden' }}>
                   <ul className="dropdown-menu inner" role="listbox" aria-expanded="false" style={{maxHeight: 156 + 'px', overflowY: 'auto'}}>
                     <li data-original-index="0" className="disabled selected">
                       <span className="text">Year</span>
@@ -187,7 +187,7 @@ class CreditCardDetails extends Component {
                       </span>
                     </span>
                   </button>
-                  <div className="dropdown-menu open" role="combobox" style={{maxHeight: 157 + 'px', overflow: 'hidden' }}>
+                  <div className="dropdown-menu open" style={{maxHeight: 157 + 'px', overflow: 'hidden' }}>
                     <ul className="dropdown-menu inner" role="listbox" aria-expanded="false" style={{maxHeight: 156 + 'px', overflowY: 'auto'}}>
                       <li data-original-index="0" className="disabled">
                         <span className="text">Select</span>

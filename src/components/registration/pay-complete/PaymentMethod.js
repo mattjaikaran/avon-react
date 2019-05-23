@@ -22,7 +22,7 @@ class PaymentMethod extends Component {
               <label className="control-label mt-2">
                 <input type="radio" name="radioGroup" id="radio2" value="option2" />
                 <span className="mr-4" />
-                <img src={require('../../../images/paypal-icon.png')} className="pr-3" /> PayPal
+                <img src={require('../../../images/paypal-icon.png')} className="pr-3" alt="img" /> PayPal
               </label>
             </div>
           </div>

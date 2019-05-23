@@ -1,0 +1,92 @@
+.m-top-s1 {
+  margin-top: 20px;
+}
+
+.m-top-s2 {
+  margin-top: 30px;
+}
+
+.m-top-s3 {
+  margin-top: 50px;
+}
+
+.m-top-s4 {
+  margin-top: 80px;
+}
+
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+
+.loginBtn-facebook {
+  background-color: #4461af;
+  color: #fff;
+}
+
+.loginBtn-google {
+  background-color: #4286f5;
+  color: #fff;
+}
+
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+}
+
+.loginBtn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.loginBtn-google:hover, .loginBtn-google:focus {
+  background-color: #306ed5;
+  border-color: #3068c4 !important;
+}
+
+.loginBtn-facebook:hover, .loginBtn-facebook:focus {
+  background-color: #3a559b;
+  border-color: #666 !important;
+}
+
+.loginBtn-facebook:before {
+  background: url(/images/fb-icon.png) no-repeat;
+  background-image: url(/images/fb-icon.png) no-repeat;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  width: 34px;
+  height: 34px;
+  margin: 3px 0px 0px 3px;
+}
+
+.loginBtn-google:before {
+  background: url(/images/google-icon.png) no-repeat;
+  background-image: url(/images/google-icon.png) no-repeat;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  width: 34px;
+  height: 34px;
+  margin: 3px 0px 0px 3px;
+}

@@ -13,7 +13,7 @@ class Kit extends Component {
         <div className="kit mt-5 mb-5">
           <div className="row mr-lg-0">
             <div className="col-md-3 col-sm-3 col-xs-4 pr-md-0">
-              <img src="https://dummyimage.com/200x100/000/fff" className="img-responsive kit-image" alt="" />
+              <img src={this.props.imgSrc} className="img-responsive kit-image" alt="" />
             </div>
             <div className="col-sm-5 col-md-4 col-lg-5">
               <p className="large font-weight-bold mt-0">
@@ -39,7 +39,7 @@ class Kit extends Component {
               </Link>
             </div>
             <div className="col-sm-2 selectBtn">
-              <Link to="#" className="btn btn-primary">
+              <Link to="/pay-complete" className="btn btn-primary">
                 Select
               </Link>
             </div>

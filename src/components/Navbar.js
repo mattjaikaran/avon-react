@@ -21,7 +21,7 @@ const Navbar = () => {
                 </div>
                 <div className="primary-nav__logo flex-fill">
                   <Link to="/">
-                    <img src={require('../images/your-avon-20.png')} className="logo" alt="YourAvon 2.0" />
+                    <img src={require('../images/avon-now-logo.svg')} className="logo" alt="YourAvon 2.0" />
                   </Link>
                 </div>
                 <div className="primary-nav__cart">

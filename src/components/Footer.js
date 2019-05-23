@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return(
-    <div class="row mt-5">
+    <div class="my-5 footer text-center global-footer small clear border-top pt-5">
       <div class="col-md-10 col-md-offset-1">
         <div class="footer-group mb-4">
           <ul class="list-unstyled list-inline">
@@ -46,7 +46,7 @@ const Footer = () => {
           </ul>
         </div>
         <div class="footer-group my-4">
-          © 2018 New Avon LLC
+          © 2019 New Avon LLC
         </div>
       </div>
     </div>

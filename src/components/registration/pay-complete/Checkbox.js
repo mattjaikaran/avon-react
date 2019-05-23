@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const Checkbox = (props) => {
   return (
@@ -13,7 +13,7 @@ const Checkbox = (props) => {
           </span>
           <small>
             By clicking this box, I affirm that I have read and agree to the
-             <a href="#" className="link-underline" data-toggle="modal" data-target="#electronic-consent"> Consent to Proceed Electronically
+             <a href="!#" className="link-underline" data-toggle="modal" data-target="#electronic-consent"> Consent to Proceed Electronically
             </a>.
           </small>
         </label>
@@ -27,7 +27,7 @@ const Checkbox = (props) => {
           </span>
           <small>
             By clicking this box, I agree that I have read, understand, and accept the
-            <a href="#" className="link-underline" data-toggle="modal" data-target="#terms-conditions"> Independent Sales Representative Contract Terms and Conditions
+            <a href="!#" className="link-underline" data-toggle="modal" data-target="#terms-conditions"> Independent Sales Representative Contract Terms and Conditions
             </a>, including the
             dispute resolution provisions contained therein.
           </small>
