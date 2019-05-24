@@ -26,8 +26,6 @@ class CartDetails extends Component {
           </strong>
           <dd className="pull-right discount font-weight-bold ng-hide" ng-show="showRefreshButton || showNoCartBtn" aria-hidden="true">$10.00</dd>
         </dl>
-        <small className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </small>
       </div>
     )
   }

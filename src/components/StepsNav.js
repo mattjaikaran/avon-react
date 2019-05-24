@@ -23,7 +23,7 @@ const StepsNav = (props) => {
           <h5 className="text-primary mb-0">
             02
           </h5>
-          <Link to="#">
+          <Link to="/starter-kit">
             <p className="steps-border">
               Starter Kit
             </p>

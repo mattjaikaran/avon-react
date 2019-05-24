@@ -29,9 +29,9 @@ class PayComplete extends Component {
           </div>
           <div className="col-md-7 col-md-pull-5 mobilePush">
             <OrderOverview
-              kit={'Quick Starter Kit'}
-              kitPrice={'25.00'}
-              kitDescription={'Just the right amount of supplies to help you grow your business!'}
+              kit={'Better Than Basics'}
+              kitPrice={'30.00'}
+              kitDescription={'Your $30 signup includes this gift.'}
             />
             <PaymentMethod />
             <ShipTo />

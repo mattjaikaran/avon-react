@@ -2,7 +2,17 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 class BasicInfoForm extends Component {
-  state = {}
+  state = {
+    language: '',
+    phoneNumber: '',
+    month: '',
+    day: '',
+    year: '',
+    address: '',
+    zipCode: '',
+    city: '',
+    state: ''
+  }
 
   onChange = (e) => {
     this.setState({
@@ -10,15 +20,34 @@ class BasicInfoForm extends Component {
     })
   }
 
+  onSubmit = (e) => {
+    e.preventDefault()
+    const obj = {
+      language: this.state.language,
+      phoneNumber: this.state.phoneNumber,
+      month: this.state.month,
+      day: this.state.day,
+      year: this.state.year,
+      address: this.state.address,
+      zipCode: this.state.zipCode,
+      city: this.state.city,
+      state: this.state.state
+    }
+    // axios.post('/api/newReps', obj)
+    // .then(res => this.props.history.push('/starter-kit'))
+    console.log('submitted', obj)
+  }
+
   render() {
     return (
       <div className="my-5">
+        <form></form>
       <h2>Nice to Meet You</h2>
       <p className="text-muted">
         We just need a few more details to help set up your account.
       </p>
       <hr />
-      <div className="mt-3">
+      <div className="form-group mt-3">
         <h5 className="d-inline ng-binding" style={{ fontWeight: '300' }}>
           Language Preference
         </h5>
@@ -57,7 +86,12 @@ class BasicInfoForm extends Component {
               <label htmlFor="" className="ng-binding">
                 Phone Number*
               </label>
-              <input type="tel" className="form-control ng-pristine ng-untouched ng-valid ng-valid-required" name="phoneNumber" id="phoneNumber" />
+              <input
+                type="tel"
+                className="form-control ng-pristine ng-untouched ng-valid ng-valid-required"
+                onChange={this.onChange}
+                name="phoneNumber"
+                id="phoneNumber" />
             </div>
           </div>
         </div>
@@ -70,42 +104,30 @@ class BasicInfoForm extends Component {
       <div className="row">
         <div className="form-group col-xs-12 col-sm-4">
         	<label htmlFor="" className="ng-binding">Month*</label>
-            <div className="dropdown">
-              <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
-                Month
-              </button>
-              <div className="dropdown-menu open" aria-labelledby="dropdownMenu2">
-                <button className="dropdown-item" type="button">Action</button>
-                <button className="dropdown-item" type="button">Another action</button>
-                <button className="dropdown-item" type="button">Something else here</button>
-              </div>
-            </div>
+            <input
+              type="tel"
+              className="form-control"
+              onChange={this.onChange}
+              name="month"
+              id="month" />
           </div>
         <div className="form-group col-xs-12 col-sm-4">
         	<label htmlFor="" className="ng-binding">Day*</label>
-            <div className="dropdown">
-              <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
-                Day
-              </button>
-              <div className="dropdown-menu open" aria-labelledby="dropdownMenu2">
-                <button className="dropdown-item" type="button">Action</button>
-                <button className="dropdown-item" type="button">Another action</button>
-                <button className="dropdown-item" type="button">Something else here</button>
-              </div>
-            </div>
+            <input
+              type="tel"
+              className="form-control"
+              onChange={this.onChange}
+              name="day"
+              id="day" />
           </div>
         <div className="form-group col-xs-12 col-sm-4">
         	<label htmlFor="" className="ng-binding">Year*</label>
-            <div className="dropdown">
-              <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
-                Year
-              </button>
-              <div className="dropdown-menu open" aria-labelledby="dropdownMenu2">
-                <button className="dropdown-item" type="button">Action</button>
-                <button className="dropdown-item" type="button">Another action</button>
-                <button className="dropdown-item" type="button">Something else here</button>
-              </div>
-            </div>
+            <input
+              type="tel"
+              className="form-control"
+              onChange={this.onChange}
+              name="year"
+              id="year" />
           </div>
         </div>{/* endrow */}
       </div>{/* end birthday div */}
@@ -156,17 +178,20 @@ class BasicInfoForm extends Component {
         <div class="checkbox wrap-label mt-0">
         	<label class="ng-binding">
           	<input type="checkbox" id="checkbox1" name="checkbox1" value="option1" checked="checked" />
-            	<span className="mr-3">
-                <i class="lt-icon lt-checkbox-checkmark lt-small" />
-                <i class="indeterminate lt-icon lt-checkbox-minus" />
-                </span>
-                By registering, you agree to Avon's Privacy Statement and Conditions of Use and are over 18 years old.
+          	<span className="mr-3">
+              <i class="lt-icon lt-checkbox-checkmark lt-small" />
+              <i class="indeterminate lt-icon lt-checkbox-minus" />
+              </span>
+              By registering, you agree to Avon's Privacy Statement and Conditions of Use and are over 18 years old.
           </label>
         </div>
       </div>
       <div className="mt-5">
-        <Link to="/starter-kit">
-          <button className="btn btn-primary btn-block">Continue</button>
+        <Link
+          to="/starter-kit"
+          onSubmit={this.onSubmit}
+          className="btn btn-primary btn-block">
+          Continue
         </Link>
       </div>
     </div>

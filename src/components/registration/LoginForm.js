@@ -29,7 +29,8 @@ class LoginForm extends Component {
       email: this.state.email,
       password: this.state.password
     }
-    console.log(repInfo)
+    // axios.post('/', repInfo)
+    // .then(res => this.props.history.push('/basic-info'))
   }
 
   render() {
@@ -77,8 +78,8 @@ class LoginForm extends Component {
             value={this.state.password}
             />
         </div>
-        <Link to="/basic-info">
-          <button className="btn btn-primary btn-block">Register</button>
+        <Link to="/basic-info" className="btn btn-primary btn-block">
+          Register
         </Link>
         <div className="text-center my-3">or</div>
         <div>

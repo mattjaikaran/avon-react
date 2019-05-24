@@ -17,7 +17,7 @@ class OrderOverview extends Component {
         </div>
         <div className="row mt-3 pb-5">
           <div className="col-xs-3">
-            <img src="https://dummyimage.com/100x100/000/fff" className="img-responsive" alt="" />
+            <img src={require('../../../images/better-than-basics.jpg')} className="img-responsive" alt="" />
           </div>
           <div className="col-xs-9">
             <div className="row">

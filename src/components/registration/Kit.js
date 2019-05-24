@@ -25,7 +25,7 @@ class Kit extends Component {
                     ${this.props.price}
                   </p>
                 </div>
-                <div className="col-sm-8 col-md-7 col-lg-8 col-xs-4 mt-0 pt-1 padding-price">
+                <div className="col-sm-8 col-md-7 col-lg-8 col-xs-4 mt-0 padding-price">
                   <p className="medium text-muted">
                     Save ${this.props.saveAmt}
                   </p>

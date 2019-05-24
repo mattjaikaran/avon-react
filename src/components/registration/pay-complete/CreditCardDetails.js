@@ -35,7 +35,8 @@ class CreditCardDetails extends Component {
       zip: this.state.billingZip,
       saveInfo: this.state.billingSaveInfo
     }
-    this.setState({ obj })
+    // axios.post('/api/', obj)
+    // .then(res => this.props.history.push('/confirmation'))
     console.log(obj)
   }
   render() {

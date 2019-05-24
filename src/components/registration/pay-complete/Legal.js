@@ -6,14 +6,14 @@ import Checkbox from './Checkbox'
 class Legal extends Component {
   render() {
     return (
-      <div>
+      <div className="mt-5">
         <LegalModal
           link={'#'}
           title={'Consent to Proceed Electronically'}
           />
         <LegalModal
           link={'#'}
-          title={'Independent Sales Representative Contract Terms and Conditions'}
+          title={'Terms and Conditions'}
           />
         <Checkbox />
       </div>

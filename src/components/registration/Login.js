@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import LoginForm from './LoginForm'
 import LeftBanner from './LeftBanner'
