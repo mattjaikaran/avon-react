@@ -31,7 +31,7 @@ class CampaignDetail extends Component {
           <p></p>
           {this.props.currentCampaign ? (
             <div className="m-top-s2">
-              <a href={this.props.productEssentialsLink}>Product Essentials</a>
+              <a href={this.props.productEssentialsLink} target="_blank" rel="noopener noreferrer">Product Essentials</a>
             </div>
           ) : null }
         </div>

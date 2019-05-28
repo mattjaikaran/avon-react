@@ -11,13 +11,22 @@ class BasicInfoForm extends Component {
     address: '',
     zipCode: '',
     city: '',
-    state: ''
+    state: '',
+    shipChecked: true,
+    termsChecked: true,
   }
 
   onChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
     })
+  }
+
+  onShipCheckmarkChange = (e) => {
+    this.setState({ shipChecked: !this.state.shipChecked })
+  }
+  onTermCheckmarkChange = (e) => {
+    this.setState({ shipChecked: !this.state.shipChecked })
   }
 
   onSubmit = (e) => {
@@ -163,24 +172,36 @@ class BasicInfoForm extends Component {
         </div>
       </div>
       <div className="form-group mt-5">
-        <div class="checkbox wrap-label mt-0">
-        	<label class="ng-binding">
-          	<input type="checkbox" id="checkbox1" name="checkbox1" value="option1" checked="checked" />
+        <div className="checkbox wrap-label mt-0">
+        	<label className="ng-binding">
+          	<input
+              type="checkbox"
+              id="checkbox1"
+              name="checkbox1"
+              onChange={this.onShipCheckmarkChange}
+              value={this.state.shipChecked}
+              checked="checked" />
             	<span className="mr-3">
-                <i class="lt-icon lt-checkbox-checkmark lt-small" />
-                <i class="indeterminate lt-icon lt-checkbox-minus" />
+                <i className="lt-icon lt-checkbox-checkmark lt-small" />
+                <i className="indeterminate lt-icon lt-checkbox-minus" />
                 </span>
                 Shipping address is same as this address
           </label>
         </div>
       </div>
       <div className="form-group mt-5">
-        <div class="checkbox wrap-label mt-0">
-        	<label class="ng-binding">
-          	<input type="checkbox" id="checkbox1" name="checkbox1" value="option1" checked="checked" />
+        <div className="checkbox wrap-label mt-0">
+        	<label className="ng-binding">
+          	<input
+              type="checkbox"
+              id="checkbox2"
+              name="checkbox2"
+              onChange={this.onTermCheckmarkChange}
+              value={this.state.termsChecked}
+              checked="checked" />
           	<span className="mr-3">
-              <i class="lt-icon lt-checkbox-checkmark lt-small" />
-              <i class="indeterminate lt-icon lt-checkbox-minus" />
+              <i className="lt-icon lt-checkbox-checkmark lt-small" />
+              <i className="indeterminate lt-icon lt-checkbox-minus" />
               </span>
               By registering, you agree to Avon's Privacy Statement and Conditions of Use and are over 18 years old.
           </label>

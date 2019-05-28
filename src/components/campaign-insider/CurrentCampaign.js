@@ -38,7 +38,7 @@ class CurrentCampaign extends Component {
         campaignNumber="08"
         currentCampaign={true}
         bulletPoints={bulletOne}
-        productEssentialsLink="https://www.youravon.com/home/campaign-insider/2019/c8/glimmershadow-liquid-eyeshadow"
+        productEssentialsLink="https://youravon.com/home/campaign-insider-dynamic-product-essentials"
         campaignProduct="NEW GLIMMERSHADOW LIQUID EYESHADOW"
         campaignImg={require('../../images/c8-glimmershadow-500x500-2.0.jpg')}
         />
@@ -46,7 +46,7 @@ class CurrentCampaign extends Component {
         campaignNumber="08"
         currentCampaign={true}
         bulletPoints={bulletTwo}
-        productEssentialsLink="https://www.youravon.com/home/campaign-insider/2019/c8/avon-true-color-glimmersticks-metallic-eye-liners"
+        productEssentialsLink="https://youravon.com/home/campaign-insider-dynamic-product-essentials"
         campaignProduct="NEW AVON TRUE COLOR GLIMMERSTICKS METALLIC EYE LINERS"
         campaignImg={require('../../images/c8-glimmersticks-500x500-2.0.jpg')}
         />
