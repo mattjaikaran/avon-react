@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route , Switch } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/Navbar'
+import Header from './components/Header'
 import Login from './components/registration/Login'
 import StarterKit from './components/registration/StarterKit'
 import BasicInfo from './components/registration/BasicInfo'
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App container my-5">
+          <Header />
           <Navbar />
           <Switch>
             <Route exact path="/" component={Login} />

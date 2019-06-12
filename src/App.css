@@ -107,6 +107,10 @@ h1 {
   padding: 10px;
 }
 
+button.btn-black.btn:hover {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .copyParagraph {
     padding: 0 9%;

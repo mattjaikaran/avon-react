@@ -8,7 +8,7 @@ const Tips = () => {
       <h1 className="title-secondary">
         HERE’S A FEW TIPS TO GET YOU STARTED
       </h1>
-      <div className="m-top-s3 row">
+      <div className="row">
         <TipsDetail
           tipsDesktopImg={require('../../images/high-five/trending-product-desktop.jpg')}
           tipsMobileImg={require('../../images/high-five/trending-product-mobile.jpg')}
