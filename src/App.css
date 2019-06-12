@@ -90,3 +90,53 @@
   height: 34px;
   margin: 3px 0px 0px 3px;
 }
+
+h1 {
+  font-weight: 300 !important;
+}
+
+.grey-bg {
+  background-color: #fafafa;
+  padding: 7%;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+  width: 250px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .copyParagraph {
+    padding: 0 9%;
+  }
+
+  .blurb {
+    padding: 0 17%;
+  }
+}
+
+@media (max-width: 991px) {
+  .tablet-mobile-50 {
+    margin-top: 50px;
+  }
+}
+
+.nav-link {
+  padding: 0 15px;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .1);
+}
+
+.navbar-toggler {
+  /* padding: .25rem .75rem; */
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}

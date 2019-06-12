@@ -4,33 +4,29 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
-      <div className="no-reverse-bg avon-header">
-        <div className="row px-0 mx-0">
-          <div className="col-xs-12 px-0">
-            <header className="global-header" role="banner">
-              <div className="text-right mt-3 mr-4 pr-1">
-                <Link
-                  className="small small-link-utility ml-auto"
-                  to="/campaign-insider">
-                  <strong>Ver en Español</strong>
-                </Link>
-              </div>
-              <nav className="navbar navbar--primary-nav navbar-default border-bottom d-flex flex-wrap align-items-center justify-content-center mt-0 pb-3 pt-0" role="navigation">
-                <div className="primary-nav__search">
-                  <span />
-                </div>
-                <div className="primary-nav__logo flex-fill">
-                  <Link to="/">
-                    <img src={require('../images/avon-now-logo.svg')} className="logo" alt="YourAvon 2.0" />
-                  </Link>
-                </div>
-                <div className="primary-nav__cart">
-                </div>
-              </nav>
-            </header>
-          </div>
+      <nav className="mb-5 navbar navbar-expand-sm navbar-dark bg-dark">
+        <Link className="navbar-brand" to="/">Menu</Link>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon">&times;</span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item list-unstyled">
+              <Link className="nav-link" to="/campaign-insider">Campaign Insider</Link>
+            </li>
+            <li className="nav-item list-unstyled">
+              <Link className="nav-link" to="/high-five">High Five Online</Link>
+            </li>
+            <li className="nav-item list-unstyled">
+              <Link className="nav-link" to="/incentives">Incentives</Link>
+            </li>
+            <li className="nav-item list-unstyled">
+              <Link className="nav-link" to="/">Register</Link>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
+
     </div>
   )
 }
